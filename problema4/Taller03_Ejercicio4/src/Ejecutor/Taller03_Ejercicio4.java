@@ -12,14 +12,23 @@ public class Taller03_Ejercicio4 {
     
     public static void main(String[] args) {
         
+        // Creo el objeto uno
         EquiposCelulares cel01 = new EquiposCelulares();
         
         String sistemaOp = "Android";
         double tamanioP = 5.6;
         double costoInicial = 1000.50;
         double iva = 12.0;
-        double ivaCostoInicial = cel01.calcularIvaCostoInicial(iva, costoInicial);
-        double costoFinal = cel01.calcularCostoFinal(ivaCostoInicial, costoInicial);
+        // Calculo el iva del costo inicial de una sola vez con la función 
+        // "calcularIvaCostoInicial"
+        double ivaCostoInicial = cel01.calcularIvaCostoInicial
+                (iva, costoInicial);
+        
+        // Calculo el costo final, aquí le envío el resultado de la función
+        // anterior y el costo inicial
+        double costoFinal = cel01.calcularCostoFinal
+                (ivaCostoInicial, costoInicial);
+        
         String direccMAC = "00:1B:44:11:3A:B7";
         String infIMEI = "010928/00/389023/3";
         
@@ -53,7 +62,8 @@ public class Taller03_Ejercicio4 {
         costoInicial = 500.50;
         iva = 12.0;
         ivaCostoInicial = cel01.calcularIvaCostoInicial(iva, costoInicial);
-        costoFinal = cel01.calcularCostoFinal(ivaCostoInicial, costoInicial);
+        costoFinal = cel01.calcularCostoFinal
+                    (ivaCostoInicial, costoInicial);
         direccMAC = "00:1e:67:09:3B:e7";
         infIMEI = "034517/45/096394/3";
         

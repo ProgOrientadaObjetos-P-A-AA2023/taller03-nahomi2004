@@ -50,6 +50,7 @@ public class Taller03_Ejercicio1 {
         area = terreno2.calcularArea(largo,ancho);
         costo_terreno = terreno2.calcularCostoTerreno(area, valor_m2);
         
+        // Establezco las variables nuevamente para poder mostrar su nuevo valor
         terreno2.establecerAncho(ancho);
         terreno2.establecerLargo(largo);
         terreno2.establecerValor_m2(valor_m2);     
@@ -62,7 +63,7 @@ public class Taller03_Ejercicio1 {
                 " Valor por metro cuadrado %.2f\n Area: %.2f\n"+
                 " Costo Terreno: %.2f\n",
                 terreno2.obtenerAncho(), terreno2.obtenerLargo(),
-                terreno2.obtenerValor_m2(), terreno.obtenerArea(),
+                terreno2.obtenerValor_m2(), terreno2.obtenerArea(),
                 terreno2.obtenerCostoTerreno());
     }
     

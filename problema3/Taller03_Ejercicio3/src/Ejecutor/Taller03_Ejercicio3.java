@@ -21,7 +21,10 @@ public class Taller03_Ejercicio3 {
         int num_lic = 250;
         int num_sedes = 1;
         double gastosXalum = 1500.50;
-        double presupuesto = institucion01.calcularPresupuesto(num_alumnos, gastosXalum);
+        // Calculo de una vez el presupuesto llamando a la función
+        // "calcularPresupuesto"
+        double presupuesto = institucion01.calcularPresupuesto
+                (num_alumnos, gastosXalum);
         
         institucion01.establecerNombre(nombre);
         institucion01.establecerTipo(tipo);

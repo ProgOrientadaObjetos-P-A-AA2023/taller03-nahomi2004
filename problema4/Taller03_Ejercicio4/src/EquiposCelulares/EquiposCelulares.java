@@ -82,10 +82,12 @@ public class EquiposCelulares {
         return costoFinal;
     }
 
+    // Función para calcular el iva del costo inicial
     public double calcularIvaCostoInicial (double i, double ci) {
         return ((i/100)+ci);
     }
-
+    
+    // Función para calcular el Costo final
     public double calcularCostoFinal (double a, double ci) {
         return a+ci;
     }
